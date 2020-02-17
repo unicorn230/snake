@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./snake.css" />
+    <title>Snake</title>
+    <script src="./snake.js"></script>
+</head>
+<body>
+    <div class="title">Snake</div>
+    <div class="Game">
+        <div class="pole">
+            
+        </div>
+        <div class="result">
+            <p id="score"></p>
+            <button class="control2" onclick="build()">retry</button>
+        </div>
+        <div class="start">
+            <button class="control2" onclick="build()">start</button>
+        </div>
+        <div class="controls">
+            <div class="contButtons"><button class="control" onclick="moveL()">L</button></div>
+            <div class="contButtonsMid"><button class="control" onclick="moveU()">U</button><button class="control" onclick="moveD()">D</button></div>
+            <div class="contButtons"><button class="control" onclick="moveR()" >R</button></div>
+        </div>
+    </div>
+</body>
+</html>

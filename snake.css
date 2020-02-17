@@ -1,0 +1,120 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+.title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+.Game{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+}
+
+.pole{
+    display: none;
+    width: 200px;
+    height: 200px;
+
+}
+.result{
+    display: none;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-size: 2em;
+    border: 1px solid black;
+}
+.start{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+    border: 1px solid black;
+}
+.rows{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 10px;
+}
+.cols{
+    border: 1px solid black;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+.controls{
+    width: 100px;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
+.contButtons{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.contButtonsMid{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.control{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.control2{
+    width: 6em;
+    height: 3em;
+    background-color: black;
+    color: white;
+    border: none;
+}
+@media screen and (min-width: 600px){
+    .pole {
+        width: 500px;
+        height: 500px;
+    }
+    .result{
+        width: 500px;
+        height: 500px;
+    }
+    .start{
+        width: 500px;
+        height: 500px;
+    }
+    .rows{
+        height: 25px;
+    }
+    .cols{
+        width: 25px;
+        height: 25px;
+    }
+}
