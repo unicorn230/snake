@@ -42,7 +42,7 @@ function build(){
             moveR()
         }
     }
-    , 300);
+    , 200);
 }
 
 function over(){
@@ -64,7 +64,6 @@ function go(arr, bool, next){
                 score++
                 spawnCherry();
                 arr.push(next)
-                console.log(arr)
             }else{
             document.querySelector(`[id='${next}']`).style.backgroundColor="black"
             document.querySelector(`[id='${arr[0]}']`).style.backgroundColor="white"
@@ -89,7 +88,6 @@ function spawnCherry(){
         spawnCherry()
     }else {
         cherry=n
-        console.log(n)
         document.querySelector(`[id='${n}']`).style.backgroundColor="red"
     }
 }
