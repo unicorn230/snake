@@ -4,6 +4,7 @@ var snakeTail=['3:8','4:8','5:8'];
 var score=0
 var cherry=""
 function build(){
+    score=0
     document.querySelector(".result").style.display="none"
     document.querySelector(".pole").style.display="block"
     document.querySelector(".start").style.display="none"
