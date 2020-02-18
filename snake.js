@@ -83,7 +83,7 @@ function getRandom(min, max) {
   }
 
 function spawnCherry(){
-    n = getRandom(0,20)+":"+getRandom(0,20)
+    n = getRandom(1,20)+":"+getRandom(1,20)
     if (snakeTail.includes(n)){
         spawnCherry()
     }else {
